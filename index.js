@@ -16,8 +16,8 @@ http.createServer((req, res) => {
 		const accessCode = urlObj.query.code;
 		const data = new FormData();
 
-		data.append('client_id', '615838742732865556');
-		data.append('client_secret', 'hhcqlY_dcavqRSb8QAbUXdrunf5koHtx');
+		data.append('client_id', 'clientid');
+		data.append('client_secret', 'client_secret');
 		data.append('grant_type', 'authorization_code');
         data.append('redirect_uri', 'http://localhost:53134');
 		data.append('scope', 'identify');
